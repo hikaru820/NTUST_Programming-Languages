@@ -1,0 +1,71 @@
+=====================================
+Prolog Test Results
+=====================================
+
+Testing Required Queries:
+
+1. Is adam betty's cousin?
+   Result: true
+
+2. Is rosa betty's cousin?
+   Result: true
+
+3. Is fran betty's cousin?
+   Result: true
+
+4. Is betty tom's sister?
+   Result: true
+
+5. Is tom betty's brother?
+   Result: true
+
+=====================================
+Testing All Predicates:
+=====================================
+
+Mother predicate:
+  mother(jane, betty): true
+  mother(amy, jane): true
+
+Father predicate:
+  father(mark, jane): true
+  father(richard, adam): true
+
+Child predicate:
+  child(betty, jane): true
+  child(tom, jane): true
+
+Sibling predicate:
+  sibling(betty, tom): true
+  sibling(jane, richard): true
+
+Sister predicate:
+  sister(betty, tom): true
+  sister(jane, richard): true
+
+Brother predicate:
+  brother(tom, betty): true
+  brother(richard, jane): true
+
+Daughter predicate:
+  daughter(betty, jane): true
+  daughter(rosa, richard): true
+
+Son predicate:
+  son(tom, jane): true
+  son(adam, richard): true
+
+Uncle predicate:
+  uncle(richard, betty): true
+  uncle(richard, tom): true
+
+Aunt predicate:
+  aunt(jane, adam): true
+  aunt(joan, betty): true
+
+Cousin predicate - All of Betty's cousins:
+  Cousins of betty: [adam,adam,rosa,rosa,fran]
+
+=====================================
+Tests completed successfully!
+=====================================

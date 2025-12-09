@@ -1,0 +1,26 @@
+[Running] "/Applications/Racket v9.0/bin/racket" pa2scheme1.scm
+Test Case 1:
+list1 = (1 2 3)
+list2 = (a b c)
+Expected: (c b a 3 2 1)
+Result:   (c b a 3 2 1)
+
+Test Case 2:
+list1 = (x y)
+list2 = (1 2 3 4)
+Expected: (4 3 2 1 y x)
+Result:   (4 3 2 1 y x)
+
+Test Case 3:
+list1 = (hello world)
+list2 = (foo bar baz)
+Expected: (baz bar foo world hello)
+Result:   (baz bar foo world hello)
+
+Test Case 4 (Empty lists):
+list1 = ()
+list2 = ()
+Expected: ()
+Result:   ()
+
+[Done] exited with code=0 in 0.324 seconds

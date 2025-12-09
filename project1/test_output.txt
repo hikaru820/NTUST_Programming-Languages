@@ -1,0 +1,35 @@
+=====================================================================
+                 CS4001301 Bank Simulation Test                      
+=====================================================================
+Tom's CD: CD account created for 12 months.
+Larry's Loan: Loan account created with initial debt: $10000.00
+
+--- Testing Checking Account (Deposit, Interest, Withdraw, Error) ---
+Cathy's Checking: Deposited $100.0. New balance: $2600.0
+Cathy's Checking: Computed daily interest $0.36. New balance: $2600.36
+Cathy's Checking: Withdraw $500.0. New balance: $2100.3561643835615
+
+--- Testing Saving Account (Fees and Reset) ---
+Sam's Savings: Deposited $100.0. New balance: $600.0
+  [Fee Waived]: Transaction 1 (Free transaction 1 of 3).
+  [Fee Waived]: Transaction 2 (Free transaction 2 of 3).
+Sam's Savings: Withdraw $50.0. New balance: $550.0
+Sam's Savings: Deposited $50.0. New balance: $600.0
+  [Fee Waived]: Transaction 3 (Free transaction 3 of 3).
+  [Fee Charged]: Transaction 4. Applied $1.00 fee.
+Sam's Savings: Withdraw $20.0. New balance: $579.0
+
+--- Testing CD Account (Early Withdrawal Fee and Maturity) ---
+
+--- Testing Loan Account (Repay and No Withdrawal) ---
+Larry's Loan: Deposited $500.0. New balance: $-9500.0
+  [Loan Payment]: Loan balance reduced.
+Larry's Loan: Computed monthly interest $63.33. New debt (negative balance): $-9563.33
+
+=====================================================================
+                 FINAL ACCOUNT BALANCES                              
+=====================================================================
+Checking Balance: $2100.36
+Saving Balance:   $579.00
+CD Balance:       $5000.00
+Loan Balance:     $-9563.33 (Debt)

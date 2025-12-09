@@ -1,0 +1,38 @@
+[Running] "/Applications/Racket v9.0/bin/racket" pa2scheme2.scm
+Test Case 1 (Given Example):
+atom = a
+list = (a (b c a (a d)))
+Expected: (a a (b c a a (a a d)))
+Result:   (a a (b c a a (a a d)))
+
+Test Case 2:
+atom = x
+list = (x y x z)
+Expected: (x x y x x z)
+Result:   (x x y x x z)
+
+Test Case 3:
+atom = 1
+list = (1 2 (3 1) 4 1)
+Expected: (1 1 2 (3 1 1) 4 1 1)
+Result:   (1 1 2 (3 1 1) 4 1 1)
+
+Test Case 4 (No matches):
+atom = z
+list = (a b c (d e))
+Expected: (a b c (d e))
+Result:   (a b c (d e))
+
+Test Case 5 (Empty list):
+atom = a
+list = ()
+Expected: ()
+Result:   ()
+
+Test Case 6 (Deeply nested):
+atom = a
+list = (a (a (a)))
+Expected: (a a (a a (a a)))
+Result:   (a a (a a (a a)))
+
+[Done] exited with code=0 in 0.338 seconds
